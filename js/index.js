@@ -13,6 +13,7 @@ let audio = null;
 start.addEventListener('click', () => {
   start.disabled = true;
   stop.disabled = false;
+  play.disabled = true;
 
   const chunks = [];
   mediaRecorder = new MediaRecorder(mediaStream, {
